@@ -1,0 +1,22 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.2rem;
+    padding: 1.5rem;
+}
+
+.menu{
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 1.5rem;
+    transform: translateY(1.75px);
+
+}
+
