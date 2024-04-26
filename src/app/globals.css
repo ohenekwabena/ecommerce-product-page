@@ -72,11 +72,10 @@ main{
 display: grid;
 justify-content: center;
 align-items: center;
-padding: 0;
+min-height: 90svh;
 
-@media (min-width: 400px) {
-  min-height: 100vh;
+@media (min-width: 420px) {
+  padding: 1rem;
 }
 }
-
 

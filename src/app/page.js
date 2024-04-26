@@ -4,9 +4,17 @@ function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.shoe_wrapper}>
-        <img className={`${styles.image_buttons} ${styles.left}`} src="images/icon-previous.svg" alt="previous" />
-        <img className={styles.shoe} src="images/image-product-1.jpg" alt="product" />
-        <img className={`${styles.image_buttons} ${styles.right}`} src="images/icon-next.svg" alt="next" />
+        <div>
+          <img className={`${styles.image_buttons} ${styles.left}`} src="images/icon-previous.svg" alt="previous" />
+          <img className={styles.shoe} src="images/image-product-1.jpg" alt="product" />
+          <img className={`${styles.image_buttons} ${styles.right}`} src="images/icon-next.svg" alt="next" />
+        </div>
+        <div className={styles.thumbnails}>
+          <img className={styles.thumbnail} src="images/image-product-1-thumbnail.jpg" alt="thumbnail" />
+          <img className={styles.thumbnail} src="images/image-product-2-thumbnail.jpg" alt="thumbnail" />
+          <img className={styles.thumbnail} src="images/image-product-3-thumbnail.jpg" alt="thumbnail" />
+          <img className={styles.thumbnail} src="images/image-product-4-thumbnail.jpg" alt="thumbnail" />
+        </div>
       </div>
       <div className={styles.description}>
         <p className={styles.company_title}>Sneaker Company</p>
