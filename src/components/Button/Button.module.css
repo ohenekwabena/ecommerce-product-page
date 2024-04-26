@@ -1,0 +1,21 @@
+.wrapper{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: var(--orange);
+    box-shadow: 0px 10px 20px hsl(26, 100%, 80%);
+    width: 100%;
+}
+
+.wrapper p{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}

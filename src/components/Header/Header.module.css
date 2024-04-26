@@ -4,9 +4,11 @@
     align-items: flex-end;
     gap: 1.2rem;
     padding: 1.5rem;
+    padding-top: 1rem;
 }
 
 .menu{
+    transform: translateY(-1.4px);
 }
 
 .logo{

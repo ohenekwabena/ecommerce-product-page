@@ -1,0 +1,150 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+
+  @media (min-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 3rem;
+  }
+}
+
+.shoe_wrapper{
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+
+  @media (min-width: 375px) {
+    grid-column: 1 / 2;
+  }
+}
+
+.shoe{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image_buttons{
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  background: white;
+  padding: 0.8rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.left{
+  left: 1rem;
+}
+
+.right{
+  right: 1rem;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 500px;
+}
+
+.company_title{
+  font-size: 0.84rem;
+  font-weight: bold;  
+  text-transform: uppercase;
+  color: var(--orange);
+  letter-spacing: 0.08rem;
+}
+
+.shoe_name{
+  font-size: 2rem;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.abstract{
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.price_wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 750;
+  color: var(--very-dark-blue);
+}
+
+
+.price_discount{
+  font-size: 1.1rem;
+  color: var(--orange);
+  background: var(--pale-orange);
+  padding: 0.1rem 0.6rem;
+  font-weight: 750;
+  border-radius: 0.5rem;
+}
+
+
+.price_original{
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  font-weight: 750;
+  letter-spacing: 0.06rem;
+  position: relative;
+}
+
+.price_original::after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.2px;
+  background: var(--grayish-blue);
+  top: 58%;
+}
+
+
+.actions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.quantity{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  color: var(--very-dark-blue);
+  background-color: var(--light-grayish-blue);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+
+
+
