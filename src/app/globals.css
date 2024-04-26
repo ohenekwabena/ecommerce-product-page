@@ -65,10 +65,18 @@ h6 {
 --black: hsl(0, 0%, 0%);  
 
 color: var(--very-dark-blue);
-
-
-
 }
 
+
+main{
+display: grid;
+justify-content: center;
+align-items: center;
+padding: 0;
+
+@media (min-width: 400px) {
+  min-height: 100vh;
+}
+}
 
 
