@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.shoe_wrapper}>
-        <div>
+        <div className={styles.shoe_image_wrapper}>
           <img className={`${styles.image_buttons} ${styles.left}`} src="images/icon-previous.svg" alt="previous" />
           <img className={styles.shoe} src="images/image-product-1.jpg" alt="product" />
           <img className={`${styles.image_buttons} ${styles.right}`} src="images/icon-next.svg" alt="next" />
@@ -32,9 +32,13 @@ function Home() {
         </div>
         <div className={styles.actions}>
           <div className={styles.quantity}>
-            <img src="images/icon-minus.svg" alt="" />
+            <button>
+              <img src="images/icon-minus.svg" alt="" />
+            </button>
             <p>0</p>
-            <img src="images/icon-plus.svg" alt="" />
+            <button>
+              <img src="images/icon-plus.svg" alt="" />
+            </button>
           </div>
           <Button>
             <img src="images/icon-cart-white.svg" alt="" />
