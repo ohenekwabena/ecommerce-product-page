@@ -12,76 +12,7 @@
   }
 }
 
-.shoe_wrapper{
-  width: 100%;
-  max-width: 450px;
-  position: relative;
-  
-  
-  @media (min-width: 420px) {
-    grid-column: 1 / 2;
-    justify-self: center;
-  }
-}
 
-.shoe_image_wrapper{
-  @media (max-width: 420px) {
- height: 300px;
-  }
-}
-
-.shoe{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-
-  @media (min-width: 420px) {
-    grid-column: 1 / 2;
-    border-radius: 1rem;
-  }
-}
-
-.image_buttons{
-  position: absolute;
-  top: 45%;
-  cursor: pointer;
-  background: white;
-  padding: 0.8rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-
-  @media (min-width: 420px) {
-   display: none;
-  }
-}
-
-.left{
-  left: 1rem;
-}
-
-.right{
-  right: 1rem;
-}
-
-.thumbnails{
-  display: none;
-  
-  @media (min-width: 421px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-}
-
-.thumbnail{
-  width: 20%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
 
 .description{
   display: flex;
@@ -90,22 +21,27 @@
   padding: 1.5rem;
   max-width: 500px;
 
+
   @media (min-width: 400px) {
     gap: 2rem;
     align-self: center;
   }
 }
 
+
+
 .company_title{
-  font-size: 0.84rem;
+  font-size: 0.75rem;
   font-weight: 700;  
   text-transform: uppercase;
   color: var(--orange);
   letter-spacing: 0.08rem;
 }
 
+
 .shoe_name{
-  font-size: clamp(2rem, 1.3vw + 1.7rem, 2.5rem);
+  font-size: clamp(1.75rem, 2.1vw + 1.2rem, 2.5rem);
+  color: var(--very-dark-blue);
   font-weight: 740;
   line-height: 1;
 
@@ -115,7 +51,7 @@
 } 
 
 .abstract{
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--dark-grayish-blue);
   font-weight: 500;
   line-height: 1.75;
@@ -138,7 +74,7 @@
   align-items: center;
   gap: 1rem;
   margin-right: auto;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   font-weight: 750;
   color: var(--very-dark-blue);
 }

@@ -9,10 +9,12 @@
 html {
   scrollbar-gutter: stable;
 }
-body {
+body, html {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
 }
+
 img,
 picture,
 video,

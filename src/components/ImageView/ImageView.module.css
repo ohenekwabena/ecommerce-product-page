@@ -1,0 +1,70 @@
+.shoe_wrapper{
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    
+    
+    @media (min-width: 420px) {
+      grid-column: 1 / 2;
+      justify-self: center;
+    }
+  }
+  
+
+
+  
+  .shoe{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    aspect-ratio: 3 / 2;
+    
+    @media (min-width: 420px) {
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        grid-column: 1 / 2;
+        border-radius: 1rem;
+    }
+  }
+  
+  .image_buttons{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    background: white;
+    padding: 0.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  
+    @media (min-width: 420px) {
+     display: none;
+    }
+  }
+  
+  .left{
+    left: 1rem;
+  }
+  
+  .right{
+    right: 1rem;
+  }
+  
+  .thumbnails{
+    display: none;
+    
+    @media (min-width: 421px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  .thumbnail{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }

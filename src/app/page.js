@@ -1,21 +1,13 @@
 import Button from "@/components/Button";
 import styles from "./homepage.module.css";
+import UnstyledButton from "@/components/UnstyledButton";
+import ImageView from "@/components/ImageView";
+import { Images } from "../../constants";
+
 function Home() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.shoe_wrapper}>
-        <div className={styles.shoe_image_wrapper}>
-          <img className={`${styles.image_buttons} ${styles.left}`} src="images/icon-previous.svg" alt="previous" />
-          <img className={styles.shoe} src="images/image-product-1.jpg" alt="product" />
-          <img className={`${styles.image_buttons} ${styles.right}`} src="images/icon-next.svg" alt="next" />
-        </div>
-        <div className={styles.thumbnails}>
-          <img className={styles.thumbnail} src="images/image-product-1-thumbnail.jpg" alt="thumbnail" />
-          <img className={styles.thumbnail} src="images/image-product-2-thumbnail.jpg" alt="thumbnail" />
-          <img className={styles.thumbnail} src="images/image-product-3-thumbnail.jpg" alt="thumbnail" />
-          <img className={styles.thumbnail} src="images/image-product-4-thumbnail.jpg" alt="thumbnail" />
-        </div>
-      </div>
+      <ImageView Images={Images} />
       <div className={styles.description}>
         <p className={styles.company_title}>Sneaker Company</p>
         <h2 className={styles.shoe_name}>Fall Limited Edition Sneakers</h2>
@@ -32,13 +24,13 @@ function Home() {
         </div>
         <div className={styles.actions}>
           <div className={styles.quantity}>
-            <button>
+            <UnstyledButton>
               <img src="images/icon-minus.svg" alt="" />
-            </button>
+            </UnstyledButton>
             <p>0</p>
-            <button>
+            <UnstyledButton>
               <img src="images/icon-plus.svg" alt="" />
-            </button>
+            </UnstyledButton>
           </div>
           <Button>
             <img src="images/icon-cart-white.svg" alt="" />

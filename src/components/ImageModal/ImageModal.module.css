@@ -1,0 +1,92 @@
+.modal_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.close_button{
+  position: absolute;
+  right: 0;
+  top: -1.2rem;
+  width: 1.2rem;
+}
+
+
+.shoe_wrapper{
+    width: 100%;
+    max-width: 450px;
+    position: relative;    
+    @media (min-width: 420px) {
+      grid-column: 1 / 2;
+      justify-self: center;
+    }
+  }
+  
+  .shoe{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    aspect-ratio: 3 / 2;
+    
+    @media (min-width: 420px) {
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        grid-column: 1 / 2;
+        border-radius: 1rem;
+    }
+  }
+  
+  .image_buttons{
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    background: white;
+    padding: 0.8rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+  }
+
+  
+  .left{
+    left: -1.2rem;
+  }
+  
+  
+  .right{
+    right: -1.2rem;
+  }
+  
+ 
+
+  .thumbnails{
+    display: none;
+    
+    @media (min-width: 421px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  .thumbnail{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+  }

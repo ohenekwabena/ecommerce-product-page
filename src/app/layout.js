@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import { Kumbh_Sans } from "next/font/google";
+import StateContextProvider from "@/components/StateContextProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,8 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={kumbhSans.className}>
       <body>
-        <Header />
-        <main>{children}</main>
+        <StateContextProvider>
+          <Header />
+          <main>{children}</main>
+        </StateContextProvider>
       </body>
     </html>
   );

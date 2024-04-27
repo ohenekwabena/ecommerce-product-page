@@ -1,0 +1,8 @@
+.button_wrapper{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+    margin: 0;
+}

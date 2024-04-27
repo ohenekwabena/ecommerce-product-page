@@ -1,11 +1,11 @@
 .desktop_links{
     display: none;
-    gap: 1.5rem; 
+
     
     @media (min-width: 740px) {
         display: flex;
         margin-right: auto;
-        gap: 2rem;
+
         height: 100px;
         align-items: center;
     }
@@ -18,7 +18,9 @@
     color: var(--dark-grayish-blue);
     font-size: 0.875rem;
     font-weight: 550;
+    padding: 0 1rem;
 }
+
 
 .desktop_links a:hover{
     color: var(--very-grayish-blue);
@@ -27,8 +29,8 @@
 .underline{
     position: absolute;
     bottom: -40px;
-    left: 0;
-    right: 0;
+    left: 25%;
+    right: 25%;
     height: 4px;
     background: var(--orange);
 }
