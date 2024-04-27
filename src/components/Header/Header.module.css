@@ -14,14 +14,13 @@
     padding: clamp(1.5rem, 2.7vw + 0.8rem, 2.5rem);
     padding-top: clamp(1rem, 2.7vw + 0.3rem, 2rem);
 
-    @media (min-width: 720px) {
+    @media (min-width: 740px) {
         align-items: center;
+        padding: 0 1rem;
     }
     
     @media (min-width: 1300px) {
         border-bottom: 1px solid var(--grayish-blue);
-        padding-left: 0;
-        padding-right: 0;
     }
 }
 
@@ -51,25 +50,6 @@
     }
 }
 
-.desktop_links{
-    display: none;
-    gap: 1.5rem;   
-
-    @media (min-width: 740px) {
-        display: flex;
-        margin-right: auto;
-        gap: 2rem;
-    }
-  
-}
-
-.desktop_links a {
-    text-decoration: none;
-    color: var(--dark-grayish-blue);
-    font-size: 0.875rem;
-    font-weight: 550;
-    
-}
 
 .logo{
     margin-right: auto;

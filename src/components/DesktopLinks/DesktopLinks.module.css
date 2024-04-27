@@ -1,0 +1,34 @@
+.desktop_links{
+    display: none;
+    gap: 1.5rem; 
+    
+    @media (min-width: 740px) {
+        display: flex;
+        margin-right: auto;
+        gap: 2rem;
+        height: 100px;
+        align-items: center;
+    }
+    
+}
+
+.desktop_links a {
+    position: relative;  
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 0.875rem;
+    font-weight: 550;
+}
+
+.desktop_links a:hover{
+    color: var(--very-grayish-blue);
+}
+
+.underline{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--orange);
+}
