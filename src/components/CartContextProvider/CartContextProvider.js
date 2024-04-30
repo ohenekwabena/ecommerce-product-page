@@ -17,9 +17,9 @@ function CartContextProvider({ children }) {
     setCartItems([]);
   }
 
-  const value = { cartItems, addToCart, removeFromCart, clearCart };
-
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return (
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart }}>{children}</CartContext.Provider>
+  );
 }
 
 export default CartContextProvider;

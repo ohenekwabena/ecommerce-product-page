@@ -4,14 +4,19 @@ import UnstyledButton from "../UnstyledButton";
 import { Root, Trigger, Portal, Content } from "@radix-ui/react-popover";
 import styles from "./Cart.module.css";
 import Button from "../Button";
+import { CartContext } from "../CartContextProvider";
 
 function Cart() {
+  const { cartItems, removeFromCart, clearCart } = React.useContext(CartContext);
+
+  function handleRemoveFromCart(item) {
+    removeFromCart(item);
+  }
+
   return (
     <Root>
       <Trigger>
-        <UnstyledButton>
-          <img className={styles.cart} src="images/icon-cart.svg" alt="cart" />
-        </UnstyledButton>
+        <img className={styles.cart} src="images/icon-cart.svg" alt="cart" />
       </Trigger>
       <Portal>
         <Content className={styles.content}>
@@ -27,7 +32,7 @@ function Cart() {
                   $125.00 x 3 <span className={styles.total}>$375.00</span>
                 </p>
               </div>
-              <UnstyledButton>
+              <UnstyledButton onClick={() => handleRemoveFromCart(item)}>
                 <img src="images/icon-delete.svg" alt="delete" className={styles.delete_button} />
               </UnstyledButton>
             </li>
