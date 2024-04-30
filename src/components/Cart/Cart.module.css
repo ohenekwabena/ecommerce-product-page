@@ -9,9 +9,10 @@
 .content{
     background: white;
     border-radius: 1rem;
-    box-shadow: 0px 25px 30px  rgba(0, 0, 0, 0.4);
-    margin: 0 1rem ;
+    box-shadow: 0px 20px 20px  rgba(0, 0, 0, 0.4);
+    margin-right: 1rem;
     margin-top: 2rem;
+    margin-left: 0.6rem;
 
     
     @media (min-width: 440px) {

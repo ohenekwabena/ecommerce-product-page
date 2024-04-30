@@ -1,2 +1,2 @@
-export * from "./StateContextProvider";
-export { default } from "./StateContextProvider";
+export * from "./CartContextProvider";
+export { default } from "./CartContextProvider";
