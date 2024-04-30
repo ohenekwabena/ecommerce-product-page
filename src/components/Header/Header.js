@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import DesktopLinks from "../DesktopLinks";
 import MobileLinks from "../MobileLinks";
 import UnstyledButton from "../UnstyledButton";
+import Cart from "../Cart";
 function Header() {
   const [showMobileLinks, setShowMobileLinks] = React.useState(false);
 
@@ -16,9 +17,7 @@ function Header() {
         <MobileLinks show={showMobileLinks} setShow={setShowMobileLinks} />
         <img className={styles.logo} src="images/logo.svg" alt="site logo" />
         <DesktopLinks />
-        <UnstyledButton>
-          <img className={styles.cart} src="images/icon-cart.svg" alt="cart" />
-        </UnstyledButton>
+        <Cart />
         <img className={styles.avatar} src="images/image-avatar.png" alt="user avatar" />
       </div>
     </header>
