@@ -61,10 +61,36 @@
       margin-top: 2rem;
     }
   }
+
+  .thumbnails button{
+    position: relative;
+
+  }
   
   .thumbnail{
     width: 100%;
+    height: 100%;
+    aspect-ratio: 2 / 2;
     object-fit: cover;
     border-radius: 0.5rem;
     cursor: pointer;
   }
+
+  .thumbnail:hover{
+    opacity: 0.5;
+  }
+
+  .selected{
+    border: 2px solid var(--orange);
+    position: absolute;
+    inset: -3px;
+    border-radius: 0.6rem;
+  }
+
+  .fade{
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+
+  

@@ -16,7 +16,7 @@ function Cart() {
   return (
     <Root>
       <Trigger>
-        <img className={styles.cart} src="images/icon-cart.svg" alt="cart" />
+        <img className={styles.cart} src="/images/icon-cart.svg" alt="cart" />
       </Trigger>
       <Portal>
         <Content className={styles.content}>
@@ -25,7 +25,7 @@ function Cart() {
           </div>
           <ul className={styles.cart_items}>
             <li className={styles.cart_item}>
-              <img src="images/image-product-1-thumbnail.jpg" alt="product" className={styles.item_img} />
+              <img src="/images/image-product-1-thumbnail.jpg" alt="product" className={styles.item_img} />
               <div>
                 <p>Fall Limited Edition Sneakers</p>
                 <p>
@@ -33,7 +33,7 @@ function Cart() {
                 </p>
               </div>
               <UnstyledButton onClick={() => handleRemoveFromCart(item)}>
-                <img src="images/icon-delete.svg" alt="delete" className={styles.delete_button} />
+                <img src="/images/icon-delete.svg" alt="delete" className={styles.delete_button} />
               </UnstyledButton>
             </li>
           </ul>

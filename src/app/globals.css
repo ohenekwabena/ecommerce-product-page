@@ -77,7 +77,6 @@ align-items: center;
 min-height: 80svh;
 
 @media (min-width: 420px) {
-  grid-template-columns: minmax(auto, 150px) 1fr;
   padding: 1rem;
 }
 }

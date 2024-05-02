@@ -8,7 +8,7 @@ function CategoriesNav() {
     <ul className={styles.wrapper}>
       {Categories.map((category) => (
         <li key={category.id} className={styles.category}>
-          <Link href={`/${category.title}`}>{category.title}</Link>
+          <Link href={`/collections/${category.title}`}>{category.title}</Link>
         </li>
       ))}
     </ul>

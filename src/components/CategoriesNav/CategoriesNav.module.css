@@ -10,6 +10,10 @@
  position: sticky;
  top: 200px;
  border-right: 1px solid hsl(0, 5%, 88%);
+
+ @media (max-width: 721px) {
+  display: none;
+ }
 }
 
 .category{
@@ -26,6 +30,6 @@
   text-transform: capitalize;
 }
 
-.category a:hover, .category a:active{
+.category a:hover, .category a::selection{
   color: var(--orange);
 }

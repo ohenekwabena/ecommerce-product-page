@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import "./globals.css";
 import { Kumbh_Sans } from "next/font/google";
 import CartContextProvider from "@/components/CartContextProvider";
-import CategoriesNav from "@/components/CategoriesNav";
 
 export const metadata = {
   title: "Create Next App",
@@ -17,10 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <CartContextProvider>
           <Header />
-          <main>
-            <CategoriesNav />
-            {children}
-          </main>
+          <main>{children}</main>
         </CartContextProvider>
       </body>
     </html>

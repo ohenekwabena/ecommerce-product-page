@@ -15,7 +15,7 @@ function MobileLinks({ show, setShow }) {
             setShow(false);
           }}
         >
-          <img src="images/icon-close.svg" alt="close" />
+          <img src="/images/icon-close.svg" alt="close" />
         </UnstyledButton>
         <ul className={styles.links}>
           {NavLinks.map((link) => (

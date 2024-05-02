@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./ImageView.module.css";
 import UnstyledButton from "../UnstyledButton";
 import ImageModal from "../ImageModal";
+import { motion } from "framer-motion";
 
 function ImageView({ Images }) {
   const [selectedImage, setSelectedImage] = React.useState(Images[0]);
@@ -58,28 +59,25 @@ function ImageView({ Images }) {
     <div className={styles.shoe_wrapper}>
       <div>
         <UnstyledButton onClick={handlePreviousClick}>
-          <img className={`${styles.image_buttons} ${styles.left}`} src="images/icon-previous.svg" alt="previous" />
+          <img className={`${styles.image_buttons} ${styles.left}`} src="/images/icon-previous.svg" alt="previous" />
         </UnstyledButton>
         <UnstyledButton onClick={handleImageClick} disabled={isDisabled}>
           <img className={styles.shoe} src={selectedImage} alt="product" />
         </UnstyledButton>
         <UnstyledButton onClick={handleNextClick}>
-          <img className={`${styles.image_buttons} ${styles.right}`} src="images/icon-next.svg" alt="next" />
+          <img className={`${styles.image_buttons} ${styles.right}`} src="/images/icon-next.svg" alt="next" />
         </UnstyledButton>
       </div>
       <div className={styles.thumbnails}>
-        <UnstyledButton onClick={() => handleThumbnailClick("images/image-product-1.jpg")}>
-          <img className={styles.thumbnail} src="images/image-product-1-thumbnail.jpg" alt="thumbnail" />
-        </UnstyledButton>
-        <UnstyledButton onClick={() => handleThumbnailClick("images/image-product-2.jpg")}>
-          <img className={styles.thumbnail} src="images/image-product-2-thumbnail.jpg" alt="thumbnail" />
-        </UnstyledButton>
-        <UnstyledButton onClick={() => handleThumbnailClick("images/image-product-3.jpg")}>
-          <img className={styles.thumbnail} src="images/image-product-3-thumbnail.jpg" alt="thumbnail" />
-        </UnstyledButton>
-        <UnstyledButton onClick={() => handleThumbnailClick("images/image-product-4.jpg")}>
-          <img className={styles.thumbnail} src="images/image-product-4-thumbnail.jpg" alt="thumbnail" />
-        </UnstyledButton>
+        {Images.map((image, index) => {
+          const isSelected = image === selectedImage;
+          return (
+            <UnstyledButton key={index} onClick={() => handleThumbnailClick(image)}>
+              {isSelected && <motion.div layoutId="selected-border" className={styles.selected} />}
+              <img className={`${styles.thumbnail} ${isSelected ? styles.fade : ""}`} src={image} alt="thumbnail" />
+            </UnstyledButton>
+          );
+        })}
       </div>
       <ImageModal open={openModal} close={setOpenModal} Images={modalImages} />
     </div>
