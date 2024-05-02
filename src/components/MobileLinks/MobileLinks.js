@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Modal from "../Modal";
-import { NavLinks } from "../../../constants";
+import { NavLinks } from "../../constants";
 import { motion } from "framer-motion";
 import styles from "./MobileLinks.module.css";
 import UnstyledButton from "../UnstyledButton";

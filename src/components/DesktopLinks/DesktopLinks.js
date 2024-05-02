@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { NavLinks } from "../../../constants";
+import { NavLinks } from "../../constants";
 import { motion } from "framer-motion";
 import styles from "./DesktopLinks.module.css";
 function DesktopLinks() {

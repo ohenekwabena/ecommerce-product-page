@@ -1,5 +1,5 @@
 import React from "react";
-import { Categories } from "../../../constants";
+import { Categories } from "../../constants";
 import Link from "next/link";
 import styles from "./CategoriesNav.module.css";
 
