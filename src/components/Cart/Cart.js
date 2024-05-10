@@ -5,12 +5,14 @@ import { Root, Trigger, Portal, Content } from "@radix-ui/react-popover";
 import styles from "./Cart.module.css";
 import Button from "../Button";
 import { CartContext } from "../CartContextProvider";
+import { formatPrice } from "@/utils";
 
 function Cart() {
   const { cartItems, removeFromCart, clearCart } = React.useContext(CartContext);
 
-  function handleRemoveFromCart(item) {
-    removeFromCart(item);
+  console.log(cartItems);
+  function handleRemoveFromCart(id) {
+    removeFromCart(id);
   }
 
   return (
@@ -24,18 +26,34 @@ function Cart() {
             <h3>Cart</h3>
           </div>
           <ul className={styles.cart_items}>
-            <li className={styles.cart_item}>
-              <img src="/images/image-product-1-thumbnail.jpg" alt="product" className={styles.item_img} />
-              <div>
-                <p>Fall Limited Edition Sneakers</p>
-                <p>
-                  $125.00 x 3 <span className={styles.total}>$375.00</span>
-                </p>
-              </div>
-              <UnstyledButton onClick={() => handleRemoveFromCart(item)}>
-                <img src="/images/icon-delete.svg" alt="delete" className={styles.delete_button} />
-              </UnstyledButton>
-            </li>
+            {cartItems.length > 0 ? (
+              cartItems.map(({ ProductName, SalePrice, Image, OnSale, Discount, ProductID, Quantity }) => {
+                function actualPrice(price, discount) {
+                  return price - price * discount;
+                }
+
+                const shoePrice = OnSale ? actualPrice(SalePrice, Discount) : SalePrice;
+
+                return (
+                  <li className={styles.cart_item} key={ProductID}>
+                    <img src={Image} alt="product" className={styles.item_img} />
+                    <div className={styles.product_details}>
+                      <p>{ProductName}</p>
+                      <p>
+                        {formatPrice(shoePrice)} x {Quantity}
+                        {"   "}
+                        <span className={styles.total}>{formatPrice(shoePrice * Quantity)}</span>
+                      </p>
+                    </div>
+                    <UnstyledButton onClick={() => handleRemoveFromCart(ProductID)}>
+                      <img src="/images/icon-delete.svg" alt="delete" className={styles.delete_button} />
+                    </UnstyledButton>
+                  </li>
+                );
+              })
+            ) : (
+              <p className={styles.empty}>Your cart is empty</p>
+            )}
           </ul>
           <div className={styles.checkout}>
             <Button>Checkout</Button>

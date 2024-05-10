@@ -160,8 +160,23 @@
         "Tags": "lifestyle"
     },
     {
-        "ProductName": "Nike Air Max 90",
+        "ProductName": "Fall Limited Edition Sneakers",
         "ProductID": "CT2007-100",
+        "SalePrice": 25000,
+        "Description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
+        "Images": [
+            "/images/image-product-1.jpg",
+            "/images/image-product-2.jpg",
+            "/images/image-product-3.jpg",
+            "/images/image-product-4.jpg"
+        ],
+        "Tags": "lifestyle",
+        "OnSale": true,
+        "Discount": 0.50
+    },
+    {
+        "ProductName": "Nike Air Max 90",
+        "ProductID": "CT2007-15510",
         "SalePrice": 9995,
         "Description": "The Nike Air Max 90 honours the OG with a revamped design that replicates the initial 1990 release. A \"clean slate\" colourway celebrates the shoe's 30th anniversary with the iconic Waffle sole.",
         "Images": [
