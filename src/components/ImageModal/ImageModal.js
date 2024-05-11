@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Modal from "../Modal";
+import { motion } from "framer-motion";
 import styles from "./ImageModal.module.css";
 import UnstyledButton from "../UnstyledButton";
 
@@ -53,18 +54,15 @@ function ImageModal({ open, close, Images }) {
             </UnstyledButton>
           </div>
           <div className={styles.thumbnails}>
-            <UnstyledButton onClick={() => handleThumbnailClick(Images[0])}>
-              <img className={styles.thumbnail} src={Images[0]} alt="thumbnail" />
-            </UnstyledButton>
-            <UnstyledButton onClick={() => handleThumbnailClick(Images[1])}>
-              <img className={styles.thumbnail} src={Images[1]} alt="thumbnail" />
-            </UnstyledButton>
-            <UnstyledButton onClick={() => handleThumbnailClick(Images[2])}>
-              <img className={styles.thumbnail} src={Images[2]} alt="thumbnail" />
-            </UnstyledButton>
-            <UnstyledButton onClick={() => handleThumbnailClick(Images[3])}>
-              <img className={styles.thumbnail} src={Images[3]} alt="thumbnail" />
-            </UnstyledButton>
+            {Images.map((image, index) => {
+              const isSelected = image === selectedImage;
+              return (
+                <UnstyledButton key={index} onClick={() => handleThumbnailClick(image)}>
+                  {isSelected && <motion.div layoutId="selected-border-modal" className={styles.selected} />}
+                  <img className={`${styles.thumbnail} ${isSelected ? styles.fade : ""}`} src={image} alt="thumbnail" />
+                </UnstyledButton>
+              );
+            })}
           </div>
         </div>
       </div>

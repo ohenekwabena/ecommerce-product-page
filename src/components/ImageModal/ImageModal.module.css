@@ -88,6 +88,7 @@
   .thumbnails button{
     width: 90px;
     height: 90px;
+    position: relative;
   }
 
   .thumbnail{
@@ -96,5 +97,16 @@
     object-fit: cover;
     border-radius: 0.5rem;
     cursor: pointer;
-    
+  }
+
+  .selected{
+    border: 2px solid var(--orange);
+    position: absolute;
+    inset: -3px;
+    border-radius: 0.6rem;
+  }
+
+  .fade{
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
   }

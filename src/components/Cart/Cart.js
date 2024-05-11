@@ -15,10 +15,15 @@ function Cart() {
     removeFromCart(id);
   }
 
+  const totalQuantity = cartItems.reduce((total, item) => total + item.Quantity, 0);
+
   return (
     <Root>
-      <Trigger>
+      <Trigger className={styles.trigger}>
         <img className={styles.cart} src="/images/icon-cart.svg" alt="cart" />
+        <span className={styles.badge} key={totalQuantity}>
+          {totalQuantity}
+        </span>
       </Trigger>
       <Portal>
         <Content className={styles.content}>
