@@ -16,6 +16,11 @@ function Cart() {
   }
 
   const totalQuantity = cartItems.reduce((total, item) => total + item.Quantity, 0);
+  const isEmpty = totalQuantity === 0;
+
+  function handleClearCart() {
+    clearCart();
+  }
 
   return (
     <Root>
@@ -61,7 +66,8 @@ function Cart() {
             )}
           </ul>
           <div className={styles.checkout}>
-            <Button>Checkout</Button>
+            <Button disabled={isEmpty}>Checkout</Button>
+            <Button onClick={handleClearCart}>Clear Cart</Button>
           </div>
         </Content>
       </Portal>

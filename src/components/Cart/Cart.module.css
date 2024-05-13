@@ -107,9 +107,24 @@
 }
 
 .checkout{
+    display: flex;
+    gap: 1rem;
     padding: 1.5rem;
 }
 
 .checkout button{
     box-shadow: none;
 }
+
+.checkout button:disabled{
+    opacity: 0.5;
+}   
+
+.checkout button:not(:first-of-type){
+    background: var(--dark-grayish-blue);
+}
+
+
+
+
+
