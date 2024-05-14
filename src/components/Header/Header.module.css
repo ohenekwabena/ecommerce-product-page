@@ -2,7 +2,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    position: relative;
+    position: fixed; 
+    top: 0;
+    background: white;
+    isolation: isolate;
+    z-index: 1000;
 }
 
 .wrapper{
@@ -13,6 +17,7 @@
     max-width: 1200px;
     padding: clamp(1.5rem, 2.7vw + 0.8rem, 2.5rem);
     padding-top: clamp(1rem, 2.7vw + 0.3rem, 2rem);
+   position: relative;
 
     @media (min-width: 740px) {
         align-items: center;

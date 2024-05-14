@@ -22,7 +22,10 @@
 }
 
 
-.desktop_links a:hover{
+.desktop_links a:hover,
+.desktop_links a:focus,
+.desktop_links a:active
+{
     color: var(--very-grayish-blue);
 }
 

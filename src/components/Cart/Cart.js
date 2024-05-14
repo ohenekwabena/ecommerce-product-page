@@ -10,7 +10,6 @@ import { formatPrice } from "@/utils";
 function Cart() {
   const { cartItems, removeFromCart, clearCart } = React.useContext(CartContext);
 
-  console.log(cartItems);
   function handleRemoveFromCart(id) {
     removeFromCart(id);
   }

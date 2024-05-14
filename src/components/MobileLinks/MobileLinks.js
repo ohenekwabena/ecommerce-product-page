@@ -5,6 +5,7 @@ import { NavLinks } from "../../constants";
 import { motion } from "framer-motion";
 import styles from "./MobileLinks.module.css";
 import UnstyledButton from "../UnstyledButton";
+import Link from "next/link";
 
 function MobileLinks({ show, setShow }) {
   return (
@@ -20,7 +21,9 @@ function MobileLinks({ show, setShow }) {
         <ul className={styles.links}>
           {NavLinks.map((link) => (
             <li key={link.id}>
-              <a href="">{link.title}</a>
+              <Link href={link.href} onClick={() => setShow(false)}>
+                {link.title}
+              </Link>
             </li>
           ))}
         </ul>

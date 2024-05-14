@@ -7,8 +7,8 @@ import CategoriesNav from "@/components/CategoriesNav";
 function Category({ params }) {
   const { category } = params;
 
-  const shoeCategory = SHOES.filter((shoe) => shoe.Tags.includes(category));
-
+  const categoryName = category === "women" ? "ladies" : category;
+  const shoeCategory = SHOES.filter((shoe) => shoe.Tags.includes(categoryName));
   return (
     <div>
       <h1 className={styles.header}>{category}</h1>

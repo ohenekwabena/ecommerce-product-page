@@ -10,7 +10,7 @@
             "/images/ispa-air-max-720-3.jpg",
             "/images/ispa-air-max-720-4.jpg"
         ],
-        "Tags": "running lifestyle"
+        "Tags": "running lifestyle men"
     },
     {
         "ProductName": "Air Jordan OG",
@@ -23,7 +23,7 @@
             "/images/air-jordan-og-3.jpg",
             "/images/air-jordan-og-4.jpg"
         ],
-        "Tags": "basketball"
+        "Tags": "basketball, ladies"
     },
     {
         "ProductName": "Nike Air Max 270 React ENG",
@@ -36,7 +36,7 @@
             "/images/air-max-270-react-eng-3.jpg",
             "/images/air-max-270-react-eng-4.jpg"
         ],
-        "Tags": "lifestyle",
+        "Tags": "lifestyle men",
         "OnSale": true,
         "Discount": 0.18
     },
@@ -51,7 +51,7 @@
             "/images/epic-phantom-react-flyknit-3.jpg",
             "/images/epic-phantom-react-flyknit-4.jpg"
         ],
-        "Tags": "running",
+        "Tags": "running men",
         "OnSale": true,
         "Discount": 0.22
     },
@@ -66,7 +66,7 @@
             "/images/air-zoom-pegasus-36-3.jpg",
             "/images/air-zoom-pegasus-36-4.jpg"
         ],
-        "Tags": "running",
+        "Tags": "running men",
         "OnSale": true,
         "Discount": 0.20
     },
@@ -81,7 +81,7 @@
             "/images/jordan-aerospace-720-3.jpg",
             "/images/jordan-aerospace-720-4.jpg"
         ],
-        "Tags": "basketball"
+        "Tags": "basketball men"
     },
     {
         "ProductName": "Nike Air Max Plus III",
@@ -94,7 +94,7 @@
             "/images/air-max-plus-iii-3.jpg",
             "/images/air-max-plus-iii-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Jordan Hydro 8",
@@ -107,7 +107,7 @@
             "/images/jordan-hydro-8-slide-3.jpg",
             "/images/jordan-hydro-8-slide-4.jpg"
         ],
-        "Tags": "lifestyle",
+        "Tags": "lifestyle men",
         "OnSale": true,
         "Discount": 0.28
     },
@@ -122,7 +122,7 @@
             "/images/air-max-200-3.jpg",
             "/images/air-max-200-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Nike Air Max 90",
@@ -135,7 +135,7 @@
             "/images/air-max-90-3.jpg",
             "/images/air-max-90-4.jpg"
         ],
-        "Tags": "lifestyle",
+        "Tags": "lifestyle men",
         "OnSale": true,
         "Discount": 0.30
     },
@@ -150,7 +150,7 @@
             "/images/air-max-1-shoe-3.jpg",
             "/images/air-max-1-shoe-4.jpg"
         ],
-        "Tags": "lifestyle",
+        "Tags": "lifestyle men",
         "OnSale": true,
         "Discount": 0.15
     },
@@ -165,7 +165,7 @@
             "/images/tiempo-legend-8-3.jpg",
             "/images/tiempo-legend-8-4.jpg"
         ],
-        "Tags": "athletics football"
+        "Tags": "athletics football men"
     },
     {
         "ProductName": "Nike Air Zoom Terra Kiger 6",
@@ -178,7 +178,7 @@
             "/images/air-zoom-terra-kiger-6-trail-3.jpg",
             "/images/air-zoom-terra-kiger-6-trail-4.jpg"
         ],
-        "Tags": "trail running"
+        "Tags": "trail running men"
     },
     {
         "ProductName": "Nike Air Max 97 Utility",
@@ -191,7 +191,7 @@
             "/images/air-max-97-utility-3.jpg",
             "/images/air-max-97-utility-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Jordan Jumpman 2020 PF",
@@ -204,7 +204,7 @@
             "/images/jordan-jumpman-2020-pf-basketball-3.jpg",
             "/images/jordan-jumpman-2020-pf-basketball-4.jpg"
         ],
-        "Tags": "basketball"
+        "Tags": "basketball men"
     },
     {
         "ProductName": "Nike Joyride Dual Run",
@@ -217,7 +217,7 @@
             "/images/joyride-dual-run-running-3.jpg",
             "/images/joyride-dual-run-running-4.jpg"
         ],
-        "Tags": "running athletic"
+        "Tags": "running athletic men"
     },
     {
         "ProductName": "Jordan Proto-React Z",
@@ -230,7 +230,7 @@
             "/images/jordan-proto-react-z-3.jpg",
             "/images/jordan-proto-react-z-4.jpg"
         ],
-        "Tags": "basketball athletic"
+        "Tags": "basketball athletic men"
     },
     {
         "ProductName": "Nike Air Max 270 React LX",
@@ -243,7 +243,7 @@
             "/images/air-max-270-react-lx-3.jpg",
             "/images/air-max-270-react-lx-4.jpg"
         ],
-        "Tags": "lifestyle athletic"
+        "Tags": "lifestyle athletic men"
     },
     {
         "ProductName": "NikeCourt Air Max Vapor Wing MS",
@@ -256,7 +256,7 @@
             "/images/nikecourt-air-max-vapor-wing-ms-multi-surface-tennis-3.jpg",
             "/images/nikecourt-air-max-vapor-wing-ms-multi-surface-tennis-4.jpg"
         ],
-        "Tags": "tennis lifestyle"
+        "Tags": "tennis lifestyle men"
     },
     {
         "ProductName": "LeBron x John Elliott Icon",
@@ -269,7 +269,7 @@
             "/images/lebron-john-elliott-icon-3.jpg",
             "/images/lebron-john-elliott-icon-4.jpg"
         ],
-        "Tags": "basketball lifestyle"
+        "Tags": "basketball lifestyle men"
     },
     {
         "ProductName": "Air Jordan 13 Retro Chinese New Year",
@@ -282,7 +282,7 @@
             "/images/air-jordan-13-retro-chinese-new-year-3.jpg",
             "/images/air-jordan-13-retro-chinese-new-year-4.jpg"
         ],
-        "Tags": "basketball lifestyle"
+        "Tags": "basketball lifestyle men"
     },
     {
         "ProductName": "Nike Zoom Pegasus Turbo Shield",
@@ -295,7 +295,7 @@
             "/images/zoom-pegasus-turbo-shield-running-3.jpg",
             "/images/zoom-pegasus-turbo-shield-running-4.jpg"
         ],
-        "Tags": "running"
+        "Tags": "running men"
     },
     {
         "ProductName": "Nike Air Wildwood ACG",
@@ -306,7 +306,7 @@
             "/images/air-wildwood-acg-1.jpg",
             "/images/air-wildwood-acg-2.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Nike SB Air Max Stefan Janoski 2",
@@ -319,7 +319,7 @@
             "/images/sb-air-max-stefan-janoski-2-skate-3.jpg",
             "/images/sb-air-max-stefan-janoski-2-skate-4.jpg"
         ],
-        "Tags": "skateboarding lifestyle"
+        "Tags": "skateboarding lifestyle men"
     },
     {
         "ProductName": "Nike Air Zoom Pegasus 36 Trail",
@@ -332,7 +332,7 @@
             "/images/air-zoom-pegasus-36-trail-trail-running-3.jpg",
             "/images/air-zoom-pegasus-36-trail-trail-running-4.jpg"
         ],
-        "Tags": "running trail"
+        "Tags": "running trail men"
     },
     {
         "ProductName": "Nike Flex RN 2019",
@@ -345,7 +345,7 @@
             "/images/flex-rn-2019-running-3.jpg",
             "/images/flex-rn-2019-running-4.jpg"
         ],
-        "Tags": "running"
+        "Tags": "running men"
     },
     {
         "ProductName": "Nike Free RN 5.0",
@@ -358,7 +358,7 @@
             "/images/free-rn-5-running-3.jpg",
             "/images/free-rn-5-running-4.jpg"
         ],
-        "Tags": "running"
+        "Tags": "running men"
     },
     {
         "ProductName": "NikeCourt Air Max Vapor Wing MS",
@@ -371,7 +371,7 @@
             "/images/nikecourt-air-max-vapor-wing-ms-multi-surface-tennis-3.jpg",
             "/images/nikecourt-air-max-vapor-wing-ms-multi-surface-tennis-4.jpg"
         ],
-        "Tags": "tennis"
+        "Tags": "tennis men"
     },
     {
         "ProductName": "Nike Air Max 90 NS SE",
@@ -384,7 +384,7 @@
             "/images/air-max-90-se-3.jpg",
             "/images/air-max-90-se-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle ladies"
     },
     {
         "ProductName": "Nike Mercurial Vapor 13 Club TF",
@@ -397,7 +397,7 @@
             "/images/mercurial-vapor-13-club-tf-artificial-football-3.jpg",
             "/images/mercurial-vapor-13-club-tf-artificial-football-4.jpg"
         ],
-        "Tags": "football"
+        "Tags": "football men"
     },
     {
         "ProductName": "Nike React Vision",
@@ -410,7 +410,7 @@
             "/images/react-vision-3.jpg",
             "/images/react-vision-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Nike Air Max 2090",
@@ -423,7 +423,7 @@
             "/images/air-max-2090-3.jpg",
             "/images/air-max-2090-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle men"
     },
     {
         "ProductName": "Nike Air Max Dia Winter",
@@ -436,7 +436,7 @@
             "/images/air-max-dia-winter-3.jpg",
             "/images/air-max-dia-winter-4.jpg"
         ],
-        "Tags": "lifestyle"
+        "Tags": "lifestyle ladies"
     },
     {
         "ProductName": "Nike Zoom Pegasus Turbo 2",
@@ -448,7 +448,7 @@
             "/images/zoom-pegasus-turbo-2-running-2.jpg",
             "/images/zoom-pegasus-turbo-2-running-3.jpg"
         ],
-        "Tags": "running"
+        "Tags": "running men"
     },
     {
         "ProductName": "Nike Air Zoom Pegasus 36",
@@ -461,7 +461,7 @@
             "/images/air-zoom-pegasus-36-3.jpg",
             "/images/air-zoom-pegasus-36-4.jpg"
         ],
-        "Tags": "running",
+        "Tags": "running men",
         "OnSale": true,
         "Discount": 0.20
     }

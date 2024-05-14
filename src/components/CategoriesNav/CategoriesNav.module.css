@@ -22,7 +22,11 @@
   margin: 0;
 }
 
-.category a{
+.category:active{
+  color: var(--orange);
+}
+
+.link{
   text-decoration: none;
   color: var(--dark-grayish-blue);
   font-size: 0.875rem;
@@ -30,6 +34,10 @@
   text-transform: capitalize;
 }
 
-.category a:hover, .category a::selection{
+.link:hover, .link::selection, .link:focus, .link:active{
+  color: var(--orange);
+}
+
+.active{
   color: var(--orange);
 }

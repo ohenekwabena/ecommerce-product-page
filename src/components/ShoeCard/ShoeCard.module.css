@@ -13,6 +13,7 @@
 .shoe_image_wrapper{
     border-radius: 16px 16px 4px 4px;
     overflow: hidden;
+    position: relative;
 }
 
 .shoe_image{
