@@ -4,6 +4,7 @@
 
 .cart{
     width: 100%;
+
 }
 
 @keyframes bump{
@@ -45,6 +46,8 @@
     margin-top: 2rem;
     margin-left: 0.6rem;
     min-width: 350px;
+    position: relative;
+    z-index: 30000000;
     
     @media (min-width: 440px) {
         margin-top: 1rem;
