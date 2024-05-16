@@ -9,6 +9,11 @@
     
 }
 
+.wrapper button{
+    width: 1.5rem;
+      height: 1.5rem;
+}
+
 .links{
     display: flex;
     flex-direction: column;
