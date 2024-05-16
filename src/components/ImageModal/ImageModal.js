@@ -55,7 +55,7 @@ function ImageModal({ open, close, Images }) {
           </div>
           <div className={styles.thumbnails}>
             {Images.map((image, index) => {
-              const isSelected = image === selectedImage;
+              const isSelected = image === selectedImage || (index === 0 && !selectedImage);
               return (
                 <UnstyledButton key={index} onClick={() => handleThumbnailClick(image)}>
                   {isSelected && <motion.div layoutId="selected-border-modal" className={styles.selected} />}

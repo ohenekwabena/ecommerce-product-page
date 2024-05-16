@@ -32,16 +32,19 @@
 
 .collection_link:hover {
     text-underline-offset: 0.25em;
+    text-decoration-color: var(--orange) ;
+    text-decoration-thickness: 2px;
   }
 
 .arrow {
     display: inline-block;
     color: var(--color-primary);
-    transition: transform 200ms;
+    transition: all 200ms;
     font-weight: 400;
     cursor: pointer;
   }
 
   .collection_link:hover .arrow {
     transform: translateX(0.25em);
+    color: var(--orange);
   }

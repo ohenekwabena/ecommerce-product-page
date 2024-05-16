@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
+import useEscapeKey from "../../hooks/use-keydown.hook";
 
 export const CartContext = React.createContext();
 
 function CartContextProvider({ children }) {
   const [cartItems, setCartItems] = React.useState([]);
+  const [showNotice, setShowNotice] = React.useState(false);
   function addToCart(item) {
     setCartItems([...cartItems, item]);
   }
@@ -30,8 +32,16 @@ function CartContextProvider({ children }) {
     setCartItems([]);
   }
 
+  const handleEscape = React.useCallback(() => {
+    setShowNotice(false);
+  }, []);
+
+  useEscapeKey("Escape", handleEscape);
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, quantityChange, clearCart }}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, removeFromCart, quantityChange, clearCart, showNotice, setShowNotice }}
+    >
       {children}
     </CartContext.Provider>
   );
