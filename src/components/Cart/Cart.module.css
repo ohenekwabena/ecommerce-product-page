@@ -88,6 +88,10 @@
     color: var(--dark-grayish-blue);
 }
 
+.cart_item p{
+    max-width: 150px;
+}
+
 .cart_item button{
     display: flex;
     align-items: center;
