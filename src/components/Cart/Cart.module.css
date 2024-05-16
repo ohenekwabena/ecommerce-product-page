@@ -88,6 +88,14 @@
     color: var(--dark-grayish-blue);
 }
 
+.cart_item button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
 .empty{
     display: flex;
     flex-direction: column;
