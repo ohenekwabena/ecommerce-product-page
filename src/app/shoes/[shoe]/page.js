@@ -39,17 +39,11 @@ function ShoesPage({ params }) {
   function handleAddToCart() {
     if (currentCartItem === null || currentCartItem === undefined) {
       addToCart(cartItem);
-      return;
     }
-
-    quantityChange(ProductID, "plus");
   }
 
   function handleQuantityChange(type) {
     if (currentCartItem === null || currentCartItem === undefined) {
-      if (type === "plus") {
-        addToCart(cartItem);
-      }
       return;
     }
 
