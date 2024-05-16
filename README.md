@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/ohenekwabena/ecommerce-product-page)
-- Live Site URL: [Live site URL](https://ecommerce-product-page-orpin.vercel.app/shoes/Nike%20Tiempo%20Legend%208%20Club%20MG)
+- Live Site URL: [Live site URL](https://ecommerce-product-page-sigma-sable.vercel.app/)
 
 ## My process
 
