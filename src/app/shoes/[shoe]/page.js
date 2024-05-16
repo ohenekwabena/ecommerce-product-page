@@ -43,9 +43,9 @@ function ShoesPage({ params }) {
   }
 
   function handleQuantityChange(type) {
-    if (currentCartItem === null || currentCartItem === undefined) {
-      return;
-    }
+    // if (currentCartItem === null || currentCartItem === undefined) {
+    //   return;
+    // }
 
     quantityChange(ProductID, type);
   }
@@ -68,11 +68,11 @@ function ShoesPage({ params }) {
         </div>
         <div className={styles.actions}>
           <div className={styles.quantity}>
-            <UnstyledButton onClick={() => handleQuantityChange("minus")}>
+            <UnstyledButton onClick={() => handleQuantityChange("minus")} disabled={currentCartItem === undefined}>
               <img src="/images/icon-minus.svg" alt="" />
             </UnstyledButton>
             <p>{currentCartItem ? currentCartItem.Quantity : 0}</p>
-            <UnstyledButton onClick={() => handleQuantityChange("plus")}>
+            <UnstyledButton onClick={() => handleQuantityChange("plus")} disabled={currentCartItem === undefined}>
               <img src="/images/icon-plus.svg" alt="" />
             </UnstyledButton>
           </div>
