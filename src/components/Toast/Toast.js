@@ -14,7 +14,7 @@ function Toast({ showNotice, setShowNotice }) {
           <div className={styles.iconContainer}>
             <Info size={24} />
           </div>
-          <p className={styles.content}>Thanks for your Order! We'll ship your goods as soon as possible.</p>
+          <p className={styles.content}>Thanks for your Order! We will ship your goods as soon as possible.</p>
           <button
             className={styles.closeButton}
             aria-label="Dismiss message"
