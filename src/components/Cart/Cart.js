@@ -7,6 +7,7 @@ import Button from "../Button";
 import { CartContext } from "../CartContextProvider";
 import { formatPrice } from "@/utils";
 import Checkout from "../Checkout";
+import Link from "next/link";
 
 function Cart() {
   const { cartItems, removeFromCart, clearCart } = React.useContext(CartContext);
@@ -46,15 +47,17 @@ function Cart() {
                 cartItems.map(({ ProductName, SalePrice, Image, ProductID, Quantity }) => {
                   return (
                     <li className={styles.cart_item} key={ProductID}>
-                      <img src={Image} alt="product" className={styles.item_img} />
-                      <div className={styles.product_details}>
-                        <p>{ProductName}</p>
-                        <p>
-                          {formatPrice(SalePrice)} x {Quantity}
-                          {"   "}
-                          <span className={styles.total}>{formatPrice(SalePrice * Quantity)}</span>
-                        </p>
-                      </div>
+                      <Link href={`/shoes/${ProductName}`}>
+                        <img src={Image} alt="product" className={styles.item_img} />
+                        <div className={styles.product_details}>
+                          <p>{ProductName}</p>
+                          <p>
+                            {formatPrice(SalePrice)} x {Quantity}
+                            {"   "}
+                            <span className={styles.total}>{formatPrice(SalePrice * Quantity)}</span>
+                          </p>
+                        </div>
+                      </Link>
                       <UnstyledButton onClick={() => handleRemoveFromCart(ProductID)}>
                         <img src="/images/icon-delete.svg" alt="delete" className={styles.delete_button} />
                       </UnstyledButton>

@@ -54,6 +54,15 @@
     }
 }
 
+.content a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1.5rem; */
+}
+
 .cart_title{
     padding: 1.5rem;
     border-bottom: 1px solid hsl(0, 5%, 88%);
@@ -75,6 +84,7 @@
 .cart_item{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     color: var(--dark-grayish-blue);
 }
