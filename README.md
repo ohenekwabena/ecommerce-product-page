@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Demo Shoe Product Page](./public/images/Screenshot%202024-05-10%20at%2023-45-30%20Create%20Next%20App.png)
 
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/ohenekwabena/ecommerce-product-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://ecommerce-product-page-orpin.vercel.app/shoes/Nike%20Tiempo%20Legend%208%20Club%20MG)
 
 ## My process
 
