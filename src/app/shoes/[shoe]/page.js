@@ -29,7 +29,7 @@ function ShoesPage({ params }) {
   const cartItem = {
     ProductName: shoeInfo[0].ProductName,
     ProductID: shoeInfo[0].ProductID,
-    SalePrice: shoeInfo[0].SalePrice ? actualPrice(shoeInfo[0].SalePrice, shoeInfo[0].Discount) : shoeInfo[0].SalePrice,
+    SalePrice: shoeInfo[0].OnSale ? actualPrice(shoeInfo[0].SalePrice, shoeInfo[0].Discount) : shoeInfo[0].SalePrice,
     Image: shoeInfo[0].Images[0],
     OnSale: shoeInfo[0].OnSale,
     Discount: shoeInfo[0].Discount,
