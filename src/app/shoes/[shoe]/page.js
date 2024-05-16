@@ -47,13 +47,10 @@ function ShoesPage({ params }) {
       return;
     }
 
-    if (type === "minus" && currentCartItem.Quantity <= 0) {
-      removeFromCart(currentCartItem);
-      return;
-    }
-
     quantityChange(ProductID, type);
   }
+
+  console.log(cartItems);
 
   return (
     <div className={styles.wrapper}>
@@ -79,7 +76,7 @@ function ShoesPage({ params }) {
               <img src="/images/icon-plus.svg" alt="" />
             </UnstyledButton>
           </div>
-          <Button onClick={handleAddToCart}>
+          <Button onClick={handleAddToCart} disabled={currentCartItem !== undefined}>
             <img src="/images/icon-cart-white.svg" alt="" />
             Add to cart
           </Button>

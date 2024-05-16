@@ -21,6 +21,10 @@ function CartContextProvider({ children }) {
     if (type === "plus") {
       currentCartItem.Quantity += 1;
     } else if (type === "minus") {
+      if (currentCartItem.Quantity <= 1) {
+        removeFromCart(ProductID);
+        return;
+      }
       currentCartItem.Quantity -= 1;
     }
 

@@ -10,16 +10,16 @@ function CategoriesNav() {
 
   return (
     <ul className={styles.wrapper}>
-      {Categories.map((category) => (
-        <li key={category.id} className={styles.category}>
-          <Link
-            href={`/collections/${category.title}`}
-            className={`${styles.link} ${pathname === `/collections/${category.title}` ? styles.active : ""}`}
-          >
-            {category.title}
-          </Link>
-        </li>
-      ))}
+      {Categories.map((category) => {
+        const activeStyles = pathname === `/collections/${category.title}` ? styles.active : "";
+        return (
+          <li key={category.id} className={styles.category}>
+            <Link href={`/collections/${category.title}`} className={`${styles.link} ${activeStyles}`}>
+              {category.title}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }
