@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import styles from "./Toast.module.css";
 import { X, Info } from "react-feather";
+import { CartContext } from "../CartContextProvider";
 
-function Toast({ showNotice, setShowNotice }) {
+function Toast() {
+  const { showNotice, setShowNotice } = React.useContext(CartContext);
+
   if (!showNotice) {
     return null;
   }

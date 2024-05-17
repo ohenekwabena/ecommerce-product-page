@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import { Kumbh_Sans } from "next/font/google";
 import CartContextProvider from "@/components/CartContextProvider";
+import Toast from "@/components/Toast";
 
 export const metadata = {
   title: "Sneakers Online Store",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <CartContextProvider>
           <Header />
           <main>{children}</main>
+          <Toast />
         </CartContextProvider>
       </body>
     </html>

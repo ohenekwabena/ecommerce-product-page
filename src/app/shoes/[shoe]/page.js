@@ -7,7 +7,6 @@ import UnstyledButton from "@/components/UnstyledButton";
 import Button from "@/components/Button";
 import { formatPrice } from "@/utils";
 import { CartContext } from "@/components/CartContextProvider";
-import Toast from "@/components/Toast";
 function ShoesPage({ params }) {
   const { shoe } = params;
 
@@ -17,8 +16,7 @@ function ShoesPage({ params }) {
 
   const { ProductName, ProductID, SalePrice, Description, Images, OnSale, Discount } = shoeInfo[0];
 
-  const { cartItems, addToCart, quantityChange, removeFromCart, showNotice, setShowNotice } =
-    React.useContext(CartContext);
+  const { cartItems, addToCart, quantityChange } = React.useContext(CartContext);
 
   const currentCartItem = cartItems.find((item) => item.ProductID === ProductID);
 
@@ -82,7 +80,6 @@ function ShoesPage({ params }) {
           </Button>
         </div>
       </div>
-      <Toast showNotice={showNotice} setShowNotice={setShowNotice} />
     </div>
   );
 }
