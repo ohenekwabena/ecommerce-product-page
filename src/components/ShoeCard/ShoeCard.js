@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "./ShoeCard.module.css";
 import { formatPrice } from "@/utils";
+import Image from "next/image";
 
 function ShoeCard({ name, price, images, discount, OnSale }) {
   function actualPrice(price, discount) {
@@ -12,7 +13,14 @@ function ShoeCard({ name, price, images, discount, OnSale }) {
     <Link href={`/shoes/${name}`} className={styles.shoe_link}>
       <article className={styles.wrapper}>
         <div className={styles.shoe_image_wrapper}>
-          <img src={images[0]} alt={name} className={styles.shoe_image} />
+          <Image
+            src={images[0]}
+            alt={name}
+            className={styles.shoe_image}
+            fill
+            sizes="(min-width: 808px) 50vw, 100vw"
+            style={{ objectFit: "cover" }}
+          />
         </div>
         <div className={styles.row}>
           <p className={styles.name}>{name}</p>

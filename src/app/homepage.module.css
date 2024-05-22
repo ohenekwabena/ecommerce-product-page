@@ -1,15 +1,18 @@
 .wrapper{
   display: grid;
-  justify-content: center;
   align-items: center;
+  width: 100%;
   
-  @media (min-width: 420px) {
-  grid-template-columns: minmax(auto, 150px) 1fr;
-  padding: 1rem;
-}
-
-@media (max-width: 721px) {
-  grid-template-columns: 1fr;
+  
+  @media screen and (min-width: 420px) {
+   grid-template-columns: minmax(auto, 150px) 1fr;
+   padding: 1rem;
  }
+ 
+  @media (max-width: 721px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+ }  
+ 
 }
 

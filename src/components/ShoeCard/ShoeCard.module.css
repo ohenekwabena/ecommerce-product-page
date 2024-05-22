@@ -1,19 +1,22 @@
 .shoe_link{
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .wrapper{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    position: relative;
 }
 
 .shoe_image_wrapper{
     border-radius: 16px 16px 4px 4px;
     overflow: hidden;
-    position: relative;
+    position: relative; 
+    min-width: 300px;
+    min-height: 400px;
+    padding-top: 100%;
 }
 
 .shoe_image{
@@ -42,7 +45,7 @@
 .sale_price{
     font-size: 1rem;
     color: var(--dark-grayish-blue);
-    
+   
 }
 
 .price_original{
@@ -85,7 +88,7 @@
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--orange);
-    border-radius: 2px;
+    border-radius: 2px; 
   }
 
 
