@@ -72,7 +72,6 @@ color: var(--very-dark-blue);
 
 main{
 display: grid;
-/* justify-content: center; */
 align-items: center;
 width: 100%;
 min-height: 80svh;
