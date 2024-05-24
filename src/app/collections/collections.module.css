@@ -1,6 +1,5 @@
 
 .wrapper{
-    /* padding: 1rem; */
     width: 100%;
   }
   
@@ -31,8 +30,9 @@
     text-decoration-line: underline;
     text-decoration-color: var(--pale-orange);
     text-decoration-skip-ink: none;
-
+    
     @media (max-width: 721px) {
+      text-decoration-color: var(--orange);
         padding-left: 2rem;
         margin-bottom: 0;
        }
