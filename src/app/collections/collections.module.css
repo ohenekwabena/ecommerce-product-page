@@ -16,8 +16,8 @@
     display: grid;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
     grid-template-columns: 100%;
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
