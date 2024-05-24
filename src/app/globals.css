@@ -73,7 +73,7 @@ color: var(--very-dark-blue);
 main{
 display: grid;
 align-items: center;
-
+width: 100%;
 min-height: 80svh;
 margin-top: 100px;
 isolation: isolate;

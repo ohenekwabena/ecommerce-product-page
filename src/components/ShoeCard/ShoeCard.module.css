@@ -81,7 +81,7 @@
   .on_sale{
     position: absolute;
     top: 12px;
-    right: -4px;
+    right:0;
     background-color: var(--pale-orange);
     height: 32px;
     line-height: 32px;
