@@ -13,10 +13,6 @@
     margin: 2rem;
     margin-left: 1rem;
     font-size: 1.5rem;
-
-    @media (max-width: 721px) {
-        margin-left: 2rem;
-       }
 }
 
 .collection{
@@ -38,7 +34,8 @@
     font-size: 1.2rem;
     margin-top: 4rem;
     text-decoration: underline var(--pale-orange) 4px;
-    
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
 
     @media (max-width: 721px) {
         padding-left: 2rem;
