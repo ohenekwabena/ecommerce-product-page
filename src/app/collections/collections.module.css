@@ -1,5 +1,10 @@
+
 .wrapper{
-    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
 
 }
 
@@ -12,6 +17,17 @@
     @media (max-width: 721px) {
         margin-left: 2rem;
        }
+}
+
+.collection{
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .collection_link{

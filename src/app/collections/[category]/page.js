@@ -10,7 +10,7 @@ function Category({ params }) {
   const categoryName = category === "women" ? "ladies" : category;
   const shoeCategory = SHOES.filter((shoe) => shoe.Tags.includes(categoryName));
   return (
-    <div>
+    <div className={styles.container}>
       <h1 className={styles.header}>{category}</h1>
       <div className={styles.wrapper}>
         <CategoriesNav />

@@ -4,7 +4,7 @@ import Link from "next/link";
 import SHOES from "../../data.json";
 import styles from "./collections.module.css";
 
-function Collections(params) {
+function Collections() {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.header}>Collections</h1>

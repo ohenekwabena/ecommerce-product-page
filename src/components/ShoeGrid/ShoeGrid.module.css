@@ -3,5 +3,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 32px;
     padding: clamp(0.5rem, 4.1vw - 0.6rem, 2rem) 2rem;
-
+    width: 100%;
+    margin: 0 auto;
 }
