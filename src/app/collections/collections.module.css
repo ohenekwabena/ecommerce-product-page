@@ -1,29 +1,27 @@
 
 .wrapper{
-    margin: 0 auto;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
-    max-width: 1400px;
-}
-
-.header{
+  }
+  
+  .header{
     text-align: center;
     margin: 2rem;
     margin-left: 1rem;
     font-size: 1.5rem;
-}
+  }
 
 .collection{
     display: grid;
     gap: 1rem;
     align-items: center;
     grid-template-columns: 100%;
-    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-}
+  }
 
 .collection_link{
-  display: block;
+  display: inline-block;
     padding-left: 2rem;
     color: var(--dark-grayish-blue);
     font-weight: 550;   

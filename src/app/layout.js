@@ -9,6 +9,12 @@ export const metadata = {
   description: "Rock your sneaker game",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
