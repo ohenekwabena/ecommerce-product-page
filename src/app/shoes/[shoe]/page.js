@@ -41,14 +41,8 @@ function ShoesPage({ params }) {
   }
 
   function handleQuantityChange(type) {
-    // if (currentCartItem === null || currentCartItem === undefined) {
-    //   return;
-    // }
-
     quantityChange(ProductID, type);
   }
-
-  console.log(cartItems);
 
   return (
     <div className={styles.wrapper}>

@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>
+    <div style={{ justifySelf: "center" }}>
       <h1>Contact</h1>
     </div>
   );

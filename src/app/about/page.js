@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div style={{ justifySelf: "center" }}>
       <h1>About</h1>
     </div>
   );
