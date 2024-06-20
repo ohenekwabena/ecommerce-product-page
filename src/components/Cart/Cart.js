@@ -31,7 +31,7 @@ function Cart() {
   return (
     <>
       <Root>
-        <Trigger className={styles.trigger}>
+        <Trigger className={styles.trigger} >
           <img className={styles.cart} src="/images/icon-cart.svg" alt="cart" />
           <span className={styles.badge} key={totalQuantity}>
             {totalQuantity}
@@ -47,7 +47,7 @@ function Cart() {
                 cartItems.map(({ ProductName, SalePrice, Image, ProductID, Quantity }) => {
                   return (
                     <li className={styles.cart_item} key={ProductID}>
-                      <Link href={`/shoes/${ProductName}`}>
+                      <Link href={`/shoes/${ProductName}`} >
                         <img src={Image} alt="product" className={styles.item_img} />
                         <div className={styles.product_details}>
                           <p>{ProductName}</p>

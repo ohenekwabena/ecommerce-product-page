@@ -58,8 +58,8 @@ function ImageModal({ open, close, Images }) {
                 src={selectedImage || Images[0]}
                 alt="product"
                 sizes="(100vw, 100vh)"
-                width={450}
-                height={450}
+                width={350}
+                height={350}
               />
             </UnstyledButton>
             <UnstyledButton onClick={handleNextClick}>
