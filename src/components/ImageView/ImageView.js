@@ -92,7 +92,6 @@ function ImageView({ Images }) {
                 sizes="(100vw, 100vh)"
                 width={100}
                 height={100}
-                style={{ width: "100%" }}
               />
             </UnstyledButton>
           );
