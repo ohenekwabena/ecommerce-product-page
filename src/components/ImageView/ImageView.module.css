@@ -1,7 +1,9 @@
 .shoe_wrapper{
+  display: block;
     width: 100%;
     max-width: 450px;
     position: relative;
+    
     
     
     @media (min-width: 420px) {
@@ -11,12 +13,17 @@
   }
   
 
+  .shoe_img_wrapper{
+    width: 100%;
+    position: relative;
+    height: 450px;
+  }
+
 
   
   .shoe{
     width: 100%;
     object-fit: cover;
-    height: 300px;
     aspect-ratio: 3 / 2;
     
     @media (min-width: 420px) {

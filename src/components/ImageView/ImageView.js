@@ -60,11 +60,11 @@ function ImageView({ Images }) {
 
   return (
     <div className={styles.shoe_wrapper}>
-      <div>
+      <div className={styles.shoe_img_wrapper}>
         <UnstyledButton onClick={handlePreviousClick}>
           <Image className={`${styles.image_buttons} ${styles.left}`} src={previousImage} alt="previous" />
         </UnstyledButton>
-        <UnstyledButton onClick={handleImageClick} disabled={isDisabled}>
+        <UnstyledButton onClick={handleImageClick} disabled={isDisabled} className={styles.shoe_img_wrapper}>
           <Image
             className={styles.shoe}
             src={selectedImage}
