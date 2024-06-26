@@ -1,24 +1,26 @@
 .modal_content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
   }
   
   .wrapper{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 2rem 0;
   }
   
   
   .close_button{
     position: absolute;
     right: 0;
-    top: -1.2rem;
+    top: -1.85rem;
     width: 1.2rem;
   }
 
@@ -29,27 +31,24 @@
   
   .shoe_wrapper{
       width: 100%;
-      max-width: 500px;
+      max-width: 450px;
       position: relative;    
-  
-      @media (min-width: 420px) {
-        grid-column: 1 / 2;
-        justify-self: center;
-      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
     }
     
     .shoe{
       width: 100%;
       object-fit: cover;
-      height: 300px;
-      aspect-ratio: 3 / 2;
-      
-      @media (min-width: 420px) {
-          height: 100%;
-          aspect-ratio: 1 / 1;
-          grid-column: 1 / 2;
-          border-radius: 1rem;
-      }
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      grid-column: 1 / 2;
+      border-radius: 1rem;
+    
     }
     
     .image_buttons{
@@ -83,8 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
-        margin-top: 2rem;
+        gap: 1.75rem;
       }
     }
     
